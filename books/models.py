@@ -36,3 +36,15 @@ class Users(models.Model):
     def __str__(self):
         return self.username
     
+    
+    
+    
+class SuggestBooks(models.Model):
+    name=models.CharField(max_length=50)
+    description=models.TextField()
+    img=models.ImageField(upload_to='images/%y/%m/%d')
+    price=models.DecimalField(max_digits=5,decimal_places=3)
+    
+    def __str__(self):
+        return self.name
+    

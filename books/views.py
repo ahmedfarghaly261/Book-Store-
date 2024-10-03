@@ -1,5 +1,5 @@
 from django.shortcuts import render,redirect
-from .models import Book,Users
+from .models import Book,Users,SuggestBooks
 # Create your views here.
 def book(request):
     data=Book.objects.filter(types='trending')
@@ -31,4 +31,5 @@ def book_content(request,book_name):
 
 def cart(request,bookName):
     bookName=Book.objects.get(name=bookName)
+    # suggestBooks=SuggestBooks.objects.all()
     return render (request,"books/cart.html",{'bookName':bookName})

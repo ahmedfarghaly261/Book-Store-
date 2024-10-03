@@ -25,7 +25,7 @@
             <img src="{{bo.img.url}}" class="card-img-top shadow rounded " alt="">
             <div class="mx-1 my-2">
                 <p class="mb-2">{{bo.name}}</p>
-                <p> <b>{{bo.price}}$ </b> </p>
+                <p> <b>{{bo.price}}$ </b> <a href="" class="float-end text-xl text-danger hover:bg-danger text-decoration-none"><i class="fa-regular fa-heart "></i>   </a> </p>
                 <button class="btn btn-success W-100% text-white"><a href="{% url 'book_content' bo.name  %}" class="text-white text-decoration-none">  <i class="fa-duotone fa-solid fa-cart-plus"></i> BUY </a> </button> <span class="float-end text-secondary-emphasis ">2022  </span>
             </div>
         </div>

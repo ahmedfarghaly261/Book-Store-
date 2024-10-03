@@ -1,6 +1,7 @@
 from django.contrib import admin
-from.models import Book,Users
+from.models import Book,Users,SuggestBooks
 # Register your models here.
 
 admin.site.register(Book)
 admin.site.register(Users)
+admin.site.register(SuggestBooks)
